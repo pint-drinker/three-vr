@@ -1,0 +1,30 @@
+{
+  "name": "three-vr-forest",
+  "version": "1.0.0",
+  "description": "Meta Quest VR forest experience built with React Three Fiber",
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_OPTIONS='--tls-min-v1.2' vite",
+    "dev:quest": "NODE_OPTIONS='--tls-min-v1.2 --openssl-legacy-provider' vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "setup-cert": "./setup-cert.sh"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "three": "^0.160.0",
+    "@react-three/fiber": "^8.15.11",
+    "@react-three/xr": "^6.3.0",
+    "@react-three/drei": "^9.92.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@types/three": "^0.160.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
+  }
+}
+
